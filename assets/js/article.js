@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slug = urlParams.get('slug');
 
     if (!slug) {
-        articleContainer.innerHTML = '<div class="text-center text-danger"><h3>Article not found.</h3><a href="poems.html" class="btn btn-primary mt-3">Go Back</a></div>';
+        articleContainer.innerHTML = '<div class="text-center text-danger"><h3>Article not found.</h3><a href="poetry.html" class="btn btn-primary mt-3">Go Back</a></div>';
         return;
     }
 
@@ -45,6 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Error fetching article:', error);
-            articleContainer.innerHTML = '<div class="text-center text-danger"><h3>Error loading article.</h3><p>It may have been removed or is unavailable.</p><a href="poems.html" class="btn btn-primary mt-3">Go Back</a></div>';
+            articleContainer.innerHTML = '<div class="text-center text-danger"><h3>Error loading article.</h3><p>It may have been removed or is unavailable.</p><a href="poetry.html" class="btn btn-primary mt-3">Go Back</a></div>';
         });
 });
