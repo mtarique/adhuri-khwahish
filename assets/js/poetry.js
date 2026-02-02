@@ -40,7 +40,7 @@ function createBlogCard(article) {
                 <h5 class="card-title text-truncate-2">${article.title}</h5>
                 <p class="card-text text-muted small mb-2">${new Date(article.published_at).toLocaleDateString()}</p>
                 <p class="card-text flex-grow-1 text-truncate-3">${article.description}</p>
-                <a href="article.html?slug=${article.slug}" class="btn btn-outline-primary mt-3 stretched-link">Read Poem</a>
+                <a href="article.html?slug=${article.slug}" class="btn btn-outline-primary mt-3 stretched-link">Read</a>
             </div>
         </div>
     `;
